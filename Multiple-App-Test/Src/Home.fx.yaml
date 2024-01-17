@@ -13,10 +13,11 @@ Home As screen:
             Align: =Align.Center
             AlignInContainer: =AlignInContainer.Center
             BorderThickness: =1
+            FontWeight: =FontWeight.Bold
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =560
-            Size: =21
+            Size: =24
             Text: ="Multiple App"
             Width: =Parent.Width-20
             ZIndex: =1

@@ -3,30 +3,30 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Button_Cancel_18": 21,
-    "Button_OK_16": 20,
+    "Button_Cancel_18": 22,
+    "Button_OK_16": 21,
     "Container1": 5,
-    "Container13_10": 14,
-    "Container28_8": 19,
-    "Container42_8": 15,
-    "Container42_9": 16,
-    "Dialog_open": 13,
-    "Gallery2": 6,
-    "galleryTemplate2": 7,
+    "Container13_10": 15,
+    "Container28_8": 20,
+    "Container42_8": 16,
+    "Container42_9": 17,
+    "Dialog_open": 14,
+    "Gallery2": 7,
+    "galleryTemplate2": 8,
     "Home": 4,
     "Host": 3,
-    "Image3": 9,
-    "Label1": 22,
-    "Label1_21": 17,
-    "NextArrow5": 11,
-    "Rectangle5": 8,
-    "Separator5": 12,
-    "TextInput1_8": 18,
-    "Title5": 10
+    "Image3": 10,
+    "Label1": 6,
+    "Label1_21": 18,
+    "NextArrow5": 12,
+    "Rectangle5": 9,
+    "Separator5": 13,
+    "TextInput1_8": 19,
+    "Title5": 11
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/17/2024 10:30:32",
+  "HeaderLastSavedDateTimeUTC": "01/17/2024 10:40:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2cec226c-7ed6-4afd-84fb-f37ceed4445a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/de226cef6fea478eba8f9090db024132\""
@@ -36,7 +36,7 @@
     "LogoPizzahut": "cffe0e06-6212-47d1-a238-0f1b22c93b4e.png"
   },
   "LocalResourceRootPaths": {
-    "LogoPizzahut": "https://docserverpwaprodseas.blob.core.windows.net/6a9944ca-0c4c-4a55-9119-c95734c89f2e-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-17T10%3A26%3A50Z&ske=2024-01-18T10%3A41%3A50Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-18T10%3A41%3A50Z&sr=b&sp=r&sig=exrvO0X%2FgUPUFPSA0piWBK7rye3N2Oyitg5V5YwiRb8%3D"
+    "LogoPizzahut": "https://docserverpwaprodeas.blob.core.windows.net/876fcb23-142e-4619-95d2-137ae44bead8-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-17T10%3A35%3A49Z&ske=2024-01-18T10%3A50%3A49Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-18T10%3A50%3A49Z&sr=b&sp=r&sig=WN3aDIl9z4hD4UJRffPSQRRhbd5BJsd2HgfkEmyaMv0%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -112,7 +112,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0568117,
+    "AnalysisLoadTime": 0.1722968,
     "ControlCount": {
       "button": 2,
       "gallery": 1,
@@ -120,12 +120,12 @@
       "groupContainer": 6,
       "icon": 1,
       "image": 1,
-      "label": 2,
+      "label": 3,
       "rectangle": 2,
       "screen": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 0.6401702
+    "DeserializationLoadTime": 0.8487769
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
