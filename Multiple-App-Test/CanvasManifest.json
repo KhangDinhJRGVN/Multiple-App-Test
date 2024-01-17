@@ -132,7 +132,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Home",
-    "Home_1"
+    "Home"
   ]
 }
