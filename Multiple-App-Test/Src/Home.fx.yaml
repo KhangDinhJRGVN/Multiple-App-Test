@@ -8,9 +8,12 @@ Home As screen:
         ZIndex: =2
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+            AlignInContainer: =AlignInContainer.SetByContainer
             DelayItemLoading: =true
             Items: ='Multiple App'
             Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =92
