@@ -16,6 +16,7 @@
     "Home": 4,
     "Host": 3,
     "Image3": 9,
+    "Label1": 22,
     "Label1_21": 17,
     "NextArrow5": 11,
     "Rectangle5": 8,
@@ -25,7 +26,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/17/2024 10:20:56",
+  "HeaderLastSavedDateTimeUTC": "01/17/2024 10:30:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2cec226c-7ed6-4afd-84fb-f37ceed4445a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/de226cef6fea478eba8f9090db024132\""
@@ -35,7 +36,7 @@
     "LogoPizzahut": "cffe0e06-6212-47d1-a238-0f1b22c93b4e.png"
   },
   "LocalResourceRootPaths": {
-    "LogoPizzahut": "https://docserverpwaprodeas.blob.core.windows.net/6dff7e04-ce1c-4d13-9c06-db10a205bb94-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-17T10%3A09%3A51Z&ske=2024-01-18T10%3A24%3A51Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-18T10%3A24%3A51Z&sr=b&sp=r&sig=xq5WlDJ7ZwuC8N2q6FNHOaQ3VqYVNyNlY5i2GyO4HV0%3D"
+    "LogoPizzahut": "https://docserverpwaprodseas.blob.core.windows.net/6a9944ca-0c4c-4a55-9119-c95734c89f2e-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-17T10%3A26%3A50Z&ske=2024-01-18T10%3A41%3A50Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-18T10%3A41%3A50Z&sr=b&sp=r&sig=exrvO0X%2FgUPUFPSA0piWBK7rye3N2Oyitg5V5YwiRb8%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -48,12 +49,12 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 7,
-    "gallery": 1,
+    "gallery": 2,
     "groupContainer": 0,
     "icon": 5,
-    "image": 3,
-    "label": 4,
-    "rectangle": 2,
+    "image": 4,
+    "label": 1,
+    "rectangle": 3,
     "text": 6
   },
   "OverridablePropertiesEntry": {
@@ -71,6 +72,7 @@
     "Home": {},
     "Host": {},
     "Image3": {},
+    "Label1": {},
     "Label1_21": {},
     "NextArrow5": {},
     "Rectangle5": {},
@@ -82,25 +84,26 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Button_Cancel_18": 16,
-    "Button_OK_16": 15,
+    "Button_Cancel_18": 17,
+    "Button_OK_16": 16,
     "Container1": 0,
-    "Container13_10": 9,
-    "Container28_8": 14,
-    "Container42_8": 10,
-    "Container42_9": 11,
-    "Dialog_open": 8,
-    "Gallery2": 1,
-    "galleryTemplate2": 2,
+    "Container13_10": 10,
+    "Container28_8": 15,
+    "Container42_8": 11,
+    "Container42_9": 12,
+    "Dialog_open": 9,
+    "Gallery2": 2,
+    "galleryTemplate2": 3,
     "Home": 0,
     "Host": 0,
-    "Image3": 4,
-    "Label1_21": 12,
-    "NextArrow5": 6,
-    "Rectangle5": 3,
-    "Separator5": 7,
-    "TextInput1_8": 13,
-    "Title5": 5
+    "Image3": 5,
+    "Label1": 1,
+    "Label1_21": 13,
+    "NextArrow5": 7,
+    "Rectangle5": 4,
+    "Separator5": 8,
+    "TextInput1_8": 14,
+    "Title5": 6
   },
   "ResourcesJsonIndices": {
     "Image-LogoPizzahut": 1,
@@ -109,20 +112,20 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0400167,
+    "AnalysisLoadTime": 0.0568117,
     "ControlCount": {
-      "button": 4,
-      "gallery": 2,
-      "galleryTemplate": 2,
-      "groupContainer": 12,
-      "icon": 2,
-      "image": 2,
-      "label": 4,
-      "rectangle": 4,
-      "screen": 2,
-      "text": 2
+      "button": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "groupContainer": 6,
+      "icon": 1,
+      "image": 1,
+      "label": 2,
+      "rectangle": 2,
+      "screen": 1,
+      "text": 1
     },
-    "DeserializationLoadTime": 1.5046372
+    "DeserializationLoadTime": 0.6401702
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

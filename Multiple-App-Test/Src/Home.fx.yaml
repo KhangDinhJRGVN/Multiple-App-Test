@@ -3,9 +3,23 @@ Home As screen:
     Container1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =15
         LayoutMode: =LayoutMode.Auto
+        PaddingTop: =10
         Width: =Parent.Width
         ZIndex: =2
+
+        Label1 As label:
+            Align: =Align.Center
+            AlignInContainer: =AlignInContainer.Center
+            BorderThickness: =1
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="Multiple App"
+            Width: =Parent.Width-20
+            ZIndex: =1
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -17,7 +31,7 @@ Home As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =92
-            ZIndex: =1
+            ZIndex: =2
 
             Image3 As image:
                 Height: =60
