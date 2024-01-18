@@ -13,7 +13,7 @@ Home As screen:
             Align: =Align.Center
             AlignInContainer: =AlignInContainer.Center
             BorderThickness: =1
-            Color: =RGBA(56, 96, 178, 1)
+            Color: =RGBA(255, 0, 0, 1)
             FontWeight: =FontWeight.Bold
             Height: =70
             LayoutMinHeight: =70
