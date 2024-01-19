@@ -729,29 +729,21 @@ NewTicketPage As screen:
                             DataCardValue12.Selected.Id,
                             DataCardValue8.Selected.Value,
                             DataCardValue9.Text,
-                            DataCardValue9.Text
+                            DataCardValue10.Text
                         )
                     );
-                    Switch(
-                        true,
-                        ResponResult.rs_id_request <> Blank(),
+                    If(
+                        !IsBlank(ResponResult.rs_get_data),
+                        Notify(
+                            ResponResult.rs_get_data,
+                            NotificationType.Error
+                        ),
                         Notify(
                             "Request have ID: " & ResponResult.rs_id_request & " Created Successfully",
                             NotificationType.Success,
                             2000
-                        ),
-                        ResponResult.rs_create_request = Blank(),
-                        Notify(
-                            ResponResult.rs_create_request,
-                            NotificationType.Error,
-                            2000
-                        ),
-                        ResponResult.rs_get_profile = Blank(),
-                        Notify(
-                            ResponResult.rs_get_profile,
-                            NotificationType.Error,
-                            2000
-                        )
+                        );
+                        Flow_notifycation_when_create_item.Run(ResponResult.rs_id_request)
                     )
                 RadiusBottomLeft: =5
                 RadiusBottomRight: =5

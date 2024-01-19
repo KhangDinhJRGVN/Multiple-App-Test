@@ -15,14 +15,10 @@
         <property name="text_3" type="string" />
       </object>
       <string name="ResponseActionOutput_rs_id_request_def" />
-      <string name="ResponseActionOutput_rs_create_request_def" />
-      <string name="ResponseActionOutput_rs_get_profile_def" />
-      <string name="ResponseActionOutput_rs_get_reqprocess_def" />
+      <string name="ResponseActionOutput_rs_get_data_def" />
       <object name="ResponseActionOutput">
         <property name="rs_id_request" type="string" />
-        <property name="rs_create_request" type="string" />
-        <property name="rs_get_profile" type="string" />
-        <property name="rs_get_reqprocess" type="string" />
+        <property name="rs_get_data" type="string" />
       </object>
       <object name="Run_responses_default_def" />
     </jsonTypes>

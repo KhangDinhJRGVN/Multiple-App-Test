@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "bcdf368a-1e07-472a-8d4a-0826a7e77f72",
+    "Name": "Flow_notifycation_when_create_item",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "749b7c36-a8b6-ee11-a568-6045bd5883aa"
+  }
+]

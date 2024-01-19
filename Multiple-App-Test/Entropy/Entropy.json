@@ -69,13 +69,16 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/19/2024 08:49:42",
+  "HeaderLastSavedDateTimeUTC": "01/19/2024 10:38:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2cec226c-7ed6-4afd-84fb-f37ceed4445a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/de226cef6fea478eba8f9090db024132\"",
-    "6b50939f-37eb-43b0-909a-c3694f1abb7f": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/80F1000B44EE2A19FDD29E5055CF4A53-F41D71CEBC81BA37\"",
+    "42a845f1-731d-4e22-9fa2-06fb9d7e9a5d": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/shared-office365user-323b35e1-7d4b-48e9-b75d-7e958dd652bd\"",
+    "5dba24ed-d492-4de9-9a9c-797016438f69": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-4151df60-5b4f-4d97-a940-98551fbe96f1\"",
+    "831d93c0-946a-417c-abf5-1aa4d6e2e49a": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-9dbd09c2-cb73-41fe-af3d-ba77ca27963b\"",
     "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-fb3b1d54-de5c-4161-8b52-8a65cae7b81b\"",
-    "f59ed9f0-6223-4587-9986-ff2f536853ce": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/shared-office365user-323b35e1-7d4b-48e9-b75d-7e958dd652bd\""
+    "b5986aa8-053c-43fc-8fbb-e56ee2ced9ba": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/3971c519f2a2867e28d79ed159e7fc91-f41d71cebc81ba37\"",
+    "cefcb5e6-5433-4f56-a34c-463681fa3cfe": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/80F1000B44EE2A19FDD29E5055CF4A53-F41D71CEBC81BA37\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -88,16 +91,17 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "ComboBoxSample": 3,
-    "CustomGallerySample": 2,
+    "ComboBoxSample": 4,
+    "CustomGallerySample": 3,
     "Flow_create_request_version-2": 0,
-    "Multiple App": 1,
-    "SP_LEVELAPPROVER": 8,
-    "SP_REQUEST": 4,
-    "SP_REQUESTPROCESS": 7,
-    "SP_REQUESTTYPE": 5,
-    "SP_SETTINGLEVELAPPROVER": 6,
-    "SP_SETTINGPROCESS": 9
+    "Flow_notifycation_when_create_item": 1,
+    "Multiple App": 2,
+    "SP_LEVELAPPROVER": 9,
+    "SP_REQUEST": 5,
+    "SP_REQUESTPROCESS": 8,
+    "SP_REQUESTTYPE": 6,
+    "SP_SETTINGLEVELAPPROVER": 7,
+    "SP_SETTINGPROCESS": 10
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
