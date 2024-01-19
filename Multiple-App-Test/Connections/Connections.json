@@ -12,13 +12,123 @@
             "tableName": "ca8fd8b5-48c3-4fe1-8d59-458cabcd2fb3"
           }
         }
+      },
+      "https://pizzavietnam.sharepoint.com/sites/TESTSITE_pizzahut_DEV_SP_SITE": {
+        "datasetOverride": {
+          "environmentVariableName": "pizzahut_DEV_SP_SITE"
+        },
+        "dataSources": {
+          "SP_LEVELAPPROVER": {
+            "tableName": "dd7cd97e-921d-4872-b89e-b1b71ef6a046",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_SP_LEVELAPPROVER"
+            }
+          },
+          "SP_REQUEST": {
+            "tableName": "ffa622b6-fe7d-4532-a5cd-3795b29db0ae",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_SP_REQUEST"
+            }
+          },
+          "SP_REQUESTPROCESS": {
+            "tableName": "89929e3a-61da-4916-b702-30a6748071b3",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_SP_REQUESTPROCESS"
+            }
+          },
+          "SP_REQUESTTYPE": {
+            "tableName": "9ac0d190-8ea5-4217-93ed-877ad37d407a",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_SP_REQUESTTYPE"
+            }
+          },
+          "SP_SETTINGLEVELAPPROVER": {
+            "tableName": "e76cdda1-3baa-4f90-a9af-4b8d0911fc84",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_SPLIST_SETTINGLEVELAPPROVER"
+            }
+          },
+          "SP_SETTINGPROCESS": {
+            "tableName": "0f22df83-74f4-4f09-92aa-f93279a5377b",
+            "tableNameOverride": {
+              "environmentVariableName": "pizzahut_DEV_SPLIST_SETTINGPROCESS"
+            }
+          }
+        }
       }
     },
     "dataSources": [
-      "Multiple App"
+      "Multiple App",
+      "SP_REQUEST",
+      "SP_REQUESTTYPE",
+      "SP_SETTINGLEVELAPPROVER",
+      "SP_REQUESTPROCESS",
+      "SP_LEVELAPPROVER",
+      "SP_SETTINGPROCESS"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "2cec226c-7ed6-4afd-84fb-f37ceed4445a"
+  },
+  "6b50939f-37eb-43b0-909a-c3694f1abb7f": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "bd00caae-7bb6-ee11-a568-6045bd5883aa"
+        },
+        "workflowName": {
+          "value": "80f1000b-44ee-2a19-fdd2-9e5055cf4a53"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "bd00caae-7bb6-ee11-a568-6045bd5883aa"
+        },
+        "workflowName": {
+          "value": "80f1000b-44ee-2a19-fdd2-9e5055cf4a53"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Flow_create_request_version-2"
+    ],
+    "dependencies": {
+      "shared_office365users": "f59ed9f0-6223-4587-9986-ff2f536853ce",
+      "shared_sharepointonline": "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4"
+    },
+    "dependents": [],
+    "id": "6b50939f-37eb-43b0-909a-c3694f1abb7f"
+  },
+  "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1670/1.0.1670.3526/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "6b50939f-37eb-43b0-909a-c3694f1abb7f"
+    ],
+    "id": "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4"
+  },
+  "f59ed9f0-6223-4587-9986-ff2f536853ce": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1672/1.0.1672.3545/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "6b50939f-37eb-43b0-909a-c3694f1abb7f"
+    ],
+    "id": "f59ed9f0-6223-4587-9986-ff2f536853ce"
   }
 }

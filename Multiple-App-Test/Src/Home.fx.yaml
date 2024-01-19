@@ -9,19 +9,43 @@ Home As screen:
         Width: =Parent.Width
         ZIndex: =2
 
-        Label1 As label:
-            Align: =Align.Center
-            AlignInContainer: =AlignInContainer.Center
-            BorderThickness: =1
-            Color: =RGBA(255, 0, 0, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =70
-            LayoutMinHeight: =70
-            LayoutMinWidth: =560
-            Size: =24
-            Text: ="Multiple App"
-            Width: =Parent.Width-20
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =10
+            Width: =Parent.Width
             ZIndex: =1
+
+            Label1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =24
+                Text: ="Multiple App"
+                Width: =Parent.Width-20
+                ZIndex: =1
+
+            Icon1 As icon.Add:
+                Height: =60
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =ResetForm(Form1);
+                    NewForm(Form1);
+                    Navigate(
+                        NewTicketPage,
+                        ScreenTransition.Fade
+                    )
+                Width: =60
+                ZIndex: =2
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -33,7 +57,7 @@ Home As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =92
-            ZIndex: =2
+            ZIndex: =3
 
             Image3 As image:
                 Height: =60
