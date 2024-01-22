@@ -23,7 +23,7 @@ Home As screen:
 
             Label1 As label:
                 Align: =Align.Center
-                Color: =RGBA(255, 0, 0, 1)
+                Color: =RGBA(0, 94, 146, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =70
