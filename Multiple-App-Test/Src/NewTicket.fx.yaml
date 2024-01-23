@@ -1,4 +1,7 @@
-NewTicketPage As screen:
+NewTicket As screen:
+    OnVisible: |
+        =ResetForm(Form1);
+        NewForm(Form1);
 
     Container7 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(230, 229, 229, 1)

@@ -1,5 +1,47 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            colMenu,
+            {
+                ID: 1,
+                Name: "Multiple App",
+                Icon: Icon.Home,
+                Active: true,
+                Screen: App.ActiveScreen
+            },
+            {
+                ID: 2,
+                Name: "NewTicket",
+                Icon: Icon.Add,
+                Active: true,
+                Screen: App.ActiveScreen
+            },
+            {
+                ID: 3,
+                Name: "Function 3",
+                Icon: Icon.Trash,
+                Active: true
+            },
+            {
+                ID: 4,
+                Name: "Function 4",
+                Icon: Icon.Edit,
+                Active: true
+            },
+            {
+                ID: 5,
+                Name: "Function 5",
+                Icon: Icon.Alarm,
+                Active: true
+            },
+            {
+                ID: 6,
+                Name: "Function 6",
+                Icon: Icon.Airplane,
+                Active: true
+            }
+        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
