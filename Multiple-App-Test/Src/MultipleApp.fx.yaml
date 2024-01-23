@@ -1,0 +1,288 @@
+MultipleApp As screen:
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =15
+        LayoutMode: =LayoutMode.Auto
+        PaddingTop: =10
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =10
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Icon1_2 As icon.Add:
+                Height: =60
+                Icon: =Icon.BackArrow
+                OnSelect: =Back()
+                Width: =60
+                ZIndex: =1
+
+            Label1 As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 94, 146, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =300
+                Size: =24
+                Text: ="Multiple App"
+                Width: =Parent.Width-20
+                ZIndex: =2
+
+            Icon1 As icon.Add:
+                Height: =60
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =
+                    Navigate(
+                        NewTicket,
+                        ScreenTransition.Fade
+                    )
+                Width: =60
+                ZIndex: =3
+
+        "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DelayItemLoading: =true
+            Items: ='Multiple App'
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =92
+            ZIndex: =3
+
+            Image3 As image:
+                Height: =60
+                Image: =LogoPizzahut
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =60
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title5 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 4
+                OnSelect: |-
+                    =Set(
+                        varLinkApp,
+                        ThisItem.'Link app'
+                    );
+                    Set(
+                        Dialogopen,
+                        true
+                    )
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                Width: =Parent.TemplateWidth - Image3.Width - 137
+                X: =91
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =2
+
+            NextArrow5 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="View item details"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator5 As rectangle:
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =4
+
+            Rectangle5 As rectangle:
+                Height: =Parent.TemplateHeight - Separator5.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =5
+
+    Dialog_open As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Visible: =Dialogopen
+        Width: =Parent.Width
+        ZIndex: =3
+
+        Container13_10 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(0, 0, 0, 0.46)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container42_8 As groupContainer.verticalAutoLayoutContainer:
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =5
+
+                Container42_9 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    FillPortions: =0
+                    Height: =450
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =600
+                    ZIndex: =1
+
+                    Label1_21 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(101, 128, 187, 1)
+                        Color: =RGBA(47,41,43,1)
+                        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =25
+                        Text: ="Confirm Open"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    TextInput1_8 As text:
+                        Align: =Align.Center
+                        Default: ="Are you sure want to open app ?"
+                        DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 1)
+                        DisplayMode: =DisplayMode.View
+                        FocusedBorderThickness: =Self.BorderThickness
+                        FontWeight: =FontWeight.Semibold
+                        Height: =250
+                        HintText: =""
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =5
+                        PaddingTop: =50
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =25
+                        Width: =Parent.Width
+                        X: =418
+                        Y: =238
+                        ZIndex: =2
+
+                    Container28_8 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0
+                        Height: |
+                            =100
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =2
+                        RadiusTopLeft: =2
+                        RadiusTopRight: =0
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Button_OK_16 As button:
+                            BorderThickness: =0
+                            Fill: =RGBA(54, 176, 75, 1)
+                            FillPortions: =1
+                            Height: =70
+                            HoverFill: =ColorFade(Self.Fill, -20%)
+                            OnSelect: |
+                                =Launch(varLinkApp);
+                                Set(
+                                    Dialogopen,
+                                    false
+                                );
+                            PaddingBottom: =5.00
+                            PaddingLeft: =5.00
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =20
+                            Text: ="Ok"
+                            Width: =180
+                            X: =62
+                            Y: =195
+                            ZIndex: =1
+
+                        Button_Cancel_18 As button:
+                            BorderThickness: =0
+                            FillPortions: =1
+                            Height: =70
+                            OnSelect: =Set(Dialogopen,false)
+                            PaddingBottom: =5.00
+                            PaddingLeft: =5.00
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =20
+                            Text: ="Cancel"
+                            Width: =180
+                            X: =184
+                            Y: =195
+                            ZIndex: =2
+

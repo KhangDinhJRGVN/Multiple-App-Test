@@ -133,6 +133,7 @@
   },
   "ScreenOrder": [
     "Home",
-    "NewTicketPage"
+    "MultipleApp",
+    "NewTicket"
   ]
 }
