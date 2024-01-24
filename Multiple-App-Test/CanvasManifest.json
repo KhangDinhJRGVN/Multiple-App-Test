@@ -94,11 +94,12 @@
       "useexperimentalsqlconnector": true,
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
+      "userdefinedfunctions": false,
       "webbarcodescanner": false,
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 3,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -117,7 +118,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Multiple-App-Test-test-Function",
     "OriginatingVersion": "1.336",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -134,6 +135,7 @@
   "ScreenOrder": [
     "Home",
     "MultipleApp",
-    "NewTicket"
+    "NewTicket",
+    "Screen1"
   ]
 }
