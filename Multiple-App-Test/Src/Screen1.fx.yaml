@@ -5,7 +5,7 @@ Screen1 As screen:
         Items: |-
             =//Table(varlistUser)
             
-            Table(varlistUser.positions)
+            SP_REQUEST
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -24,30 +24,12 @@ Screen1 As screen:
             Text: |-
                 =//ThisItem.City
                 
-                ThisItem.Value.allowedAudiences
+                ThisItem.'Created By'.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+            X: =24
+            Y: =32
             ZIndex: =1
-
-        Subtitle2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: |-
-                =//ThisItem.DisplayName
-                
-                ThisItem.Value.mail
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height
-            ZIndex: =2
 
         NextArrow3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -83,11 +65,11 @@ Screen1 As screen:
         Height: =70
         OnSelect: |-
             =//Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/v1.0/groups/f2c28c3f-ff15-4fe0-b6c4-1340fb519cb0/members?$count=true","GET",""))
-            Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/beta/me/profile","GET",""))
+            //Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/beta/me/profile","GET",""))
             
-            //Set(varlistUser,Office365Users.UserProfile(User().EntraObjectId))
+            Set(varlistUser,Office365Users.UserProfile(User().EntraObjectId))
         Size: =24
-        Text: ="Button"
+        Text: ="API test"
         Width: =280
         X: =180
         Y: =56
@@ -105,11 +87,15 @@ Screen1 As screen:
     Button1_1 As button:
         Height: =70
         OnSelect: |-
-            =If(
+            =Set(
+                varlistUser,
+                Office365Users.UserProfile(User().EntraObjectId)
+            );
+            If(
                 !IsBlank(
                     LookUp(
-                        ApprovePermissionGrant,
-                        User().Email in 
+                        SP_LEVELAPPROVER,
+                        User().Email = IdUser.Email && Level.Value = "Approver 1"
                     )
                 ),
                 Notify(
@@ -127,16 +113,4 @@ Screen1 As screen:
         X: =36
         Y: =270
         ZIndex: =5
-
-    Button2 As button:
-        Height: =70
-        OnSelect: |
-            =//Concat('Incharge Person'Email & ";")
-            Office365Users.ManagerV2(User().EntraObjectId)
-        Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =332
-        Y: =270
-        ZIndex: =6
 
