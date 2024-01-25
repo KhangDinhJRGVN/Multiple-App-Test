@@ -2,13 +2,13 @@ ApiTest As screen:
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =961
+        Height: =687
         Items: =Table(varlistgroup.value)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =90
-        Y: =173
+        Y: =446
         ZIndex: =1
 
         Title3 As label:
@@ -73,6 +73,7 @@ ApiTest As screen:
         Size: =24
         Text: ="API test"
         Width: =280
+        X: =60
         ZIndex: =2
 
     Button1_1 As button:
@@ -98,4 +99,49 @@ ApiTest As screen:
         Width: =280
         X: =360
         ZIndex: =5
+
+    Button1_2 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(
+                varNN,
+                MicrosoftTranslator.Translate(
+                    TextInput1.Text,
+                    "en"
+                );
+                
+            )
+        Size: =24
+        Text: ="Dịch"
+        Width: =280
+        X: =138
+        Y: =276
+        ZIndex: =6
+
+    Label3_1 As label:
+        Height: =70
+        Size: =21
+        Text: =varNN
+        Width: =560
+        X: =40
+        Y: =181
+        ZIndex: =8
+
+    TextInput1 As text:
+        Default: =
+        Height: =70
+        HintText: ="Enter text"
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =90
+        ZIndex: =9
+
+    Icon1_3 As icon.Add:
+        Height: =60
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =60
+        Y: =5
+        ZIndex: =10
 

@@ -25,8 +25,8 @@ App As appinfo:
             },
             {
                 ID: 4,
-                Name: "Function 4",
-                Icon: Icon.Edit,
+                Name: "Response Data",
+                Icon: Icon.Redo,
                 Active: true
             },
             {

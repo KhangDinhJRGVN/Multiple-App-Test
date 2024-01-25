@@ -39,6 +39,10 @@ Home As screen:
                     Navigate(
                         ApiTest,
                         ScreenTransition.Fade
+                    ),
+                    "Response Data",Navigate(
+                        ResponseData,
+                        ScreenTransition.Fade
                     )
                 )
             PaddingBottom: =0
