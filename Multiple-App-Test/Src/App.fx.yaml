@@ -19,8 +19,8 @@ App As appinfo:
             },
             {
                 ID: 3,
-                Name: "Function 3",
-                Icon: Icon.Trash,
+                Name: "Api test",
+                Icon: Icon.Airplane,
                 Active: true
             },
             {

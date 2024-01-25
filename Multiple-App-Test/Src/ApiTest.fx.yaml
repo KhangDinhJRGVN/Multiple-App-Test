@@ -1,16 +1,14 @@
-Screen1 As screen:
+ApiTest As screen:
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Items: |-
-            =//Table(varlistUser)
-            
-            SP_REQUEST
+        Height: =961
+        Items: =Table(varlistgroup.value)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =90
-        Y: =561
+        Y: =173
         ZIndex: =1
 
         Title3 As label:
@@ -21,10 +19,7 @@ Screen1 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: |-
-                =//ThisItem.City
-                
-                ThisItem.'Created By'.DisplayName
+            Text: =ThisItem.Value.displayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
             X: =24
@@ -63,26 +58,22 @@ Screen1 As screen:
 
     Button1 As button:
         Height: =70
-        OnSelect: |-
+        OnSelect: |+
             =//Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/v1.0/groups/f2c28c3f-ff15-4fe0-b6c4-1340fb519cb0/members?$count=true","GET",""))
-            //Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/beta/me/profile","GET",""))
             
-            Set(varlistUser,Office365Users.UserProfile(User().EntraObjectId))
+            Set(
+                varlistgroup,
+                Office365Groups.HttpRequest(
+                    "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true",
+                    "GET",
+                    ""
+                )
+            )
+            
         Size: =24
         Text: ="API test"
         Width: =280
-        X: =180
-        Y: =56
         ZIndex: =2
-
-    Label5 As label:
-        Height: =70
-        Size: =21
-        Text: =
-        Width: =560
-        X: =52
-        Y: =146
-        ZIndex: =4
 
     Button1_1 As button:
         Height: =70
@@ -92,12 +83,7 @@ Screen1 As screen:
                 Office365Users.UserProfile(User().EntraObjectId)
             );
             If(
-                !IsBlank(
-                    LookUp(
-                        SP_LEVELAPPROVER,
-                        User().Email = IdUser.Email && Level.Value = "Approver 1"
-                    )
-                ),
+                varlistUser.City = Blank(),
                 Notify(
                     "Successfully",
                     NotificationType.Success
@@ -110,7 +96,6 @@ Screen1 As screen:
         Size: =24
         Text: ="Button"
         Width: =280
-        X: =36
-        Y: =270
+        X: =360
         ZIndex: =5
 
