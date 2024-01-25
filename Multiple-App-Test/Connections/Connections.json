@@ -1,4 +1,18 @@
 {
+  "1e73d99e-6050-4692-af07-03b7fd28455c": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1672/1.0.1672.3545/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1e73d99e-6050-4692-af07-03b7fd28455c"
+  },
   "2cec226c-7ed6-4afd-84fb-f37ceed4445a": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -8,6 +22,9 @@
     "datasets": {
       "https://pizzavietnam.sharepoint.com/sites/TESTSITE": {
         "dataSources": {
+          "ApprovePermissionGrant": {
+            "tableName": "990a9eee-92f7-43c4-8b12-9758b340d194"
+          },
           "Multiple App": {
             "tableName": "ca8fd8b5-48c3-4fe1-8d59-458cabcd2fb3"
           }
@@ -71,7 +88,8 @@
       "SP_SETTINGLEVELAPPROVER",
       "SP_REQUESTPROCESS",
       "SP_LEVELAPPROVER",
-      "SP_SETTINGPROCESS"
+      "SP_SETTINGPROCESS",
+      "ApprovePermissionGrant"
     ],
     "dependencies": {},
     "dependents": [],
@@ -230,5 +248,19 @@
     },
     "dependents": [],
     "id": "cefcb5e6-5433-4f56-a34c-463681fa3cfe"
+  },
+  "d2b82b98-bcad-4ac2-8c2f-147a4944b9ac": {
+    "connectionRef": {
+      "displayName": "Office 365 Groups",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365groups/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365groups"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Groups"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d2b82b98-bcad-4ac2-8c2f-147a4944b9ac"
   }
 }

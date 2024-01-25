@@ -1,0 +1,116 @@
+Screen1 As screen:
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Items: |-
+            =//Table(varlistUser)
+            
+            SP_REQUEST
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =90
+        Y: =561
+        ZIndex: =1
+
+        Title3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =//ThisItem.City
+                
+                ThisItem.'Created By'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =24
+            Y: =32
+            ZIndex: =1
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle3 As rectangle:
+            Height: =Parent.TemplateHeight - Separator3.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+    Button1 As button:
+        Height: =70
+        OnSelect: |-
+            =//Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/v1.0/groups/f2c28c3f-ff15-4fe0-b6c4-1340fb519cb0/members?$count=true","GET",""))
+            //Set(varlistUser,Office365Groups.HttpRequest("https://graph.microsoft.com/beta/me/profile","GET",""))
+            
+            Set(varlistUser,Office365Users.UserProfile(User().EntraObjectId))
+        Size: =24
+        Text: ="API test"
+        Width: =280
+        X: =180
+        Y: =56
+        ZIndex: =2
+
+    Label5 As label:
+        Height: =70
+        Size: =21
+        Text: =
+        Width: =560
+        X: =52
+        Y: =146
+        ZIndex: =4
+
+    Button1_1 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(
+                varlistUser,
+                Office365Users.UserProfile(User().EntraObjectId)
+            );
+            If(
+                !IsBlank(
+                    LookUp(
+                        SP_LEVELAPPROVER,
+                        User().Email = IdUser.Email && Level.Value = "Approver 1"
+                    )
+                ),
+                Notify(
+                    "Successfully",
+                    NotificationType.Success
+                ),
+                Notify(
+                    "Error",
+                    NotificationType.Error
+                )
+            )
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =36
+        Y: =270
+        ZIndex: =5
+
