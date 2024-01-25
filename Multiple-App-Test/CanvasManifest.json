@@ -136,6 +136,7 @@
     "Home",
     "MultipleApp",
     "NewTicket",
-    "Screen1"
+    "ApiTest",
+    "ResponseData"
   ]
 }

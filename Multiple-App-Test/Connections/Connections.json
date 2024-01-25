@@ -105,7 +105,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "cefcb5e6-5433-4f56-a34c-463681fa3cfe"
+      "cefcb5e6-5433-4f56-a34c-463681fa3cfe",
+      "d4b4af7a-8fc8-43f3-8a4e-cb829a0b40b6"
     ],
     "id": "42a845f1-731d-4e22-9fa2-06fb9d7e9a5d"
   },
@@ -148,7 +149,8 @@
     "dependencies": {},
     "dependents": [
       "b5986aa8-053c-43fc-8fbb-e56ee2ced9ba",
-      "cefcb5e6-5433-4f56-a34c-463681fa3cfe"
+      "cefcb5e6-5433-4f56-a34c-463681fa3cfe",
+      "d4b4af7a-8fc8-43f3-8a4e-cb829a0b40b6"
     ],
     "id": "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4"
   },
@@ -203,6 +205,29 @@
     },
     "dependents": [],
     "id": "b5986aa8-053c-43fc-8fbb-e56ee2ced9ba"
+  },
+  "cc5c35d2-5715-4761-a294-73d1c1d644f7": {
+    "connectionRef": {
+      "displayName": "Microsoft Translator",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_microsofttranslator",
+        "appVer": "3.24013.17",
+        "modifiedOn": "2024-01-25 11:06:30",
+        "policy": "{\"type\":\"action\",\"dataSources\":{\"actions\":[\"translate\"]}}",
+        "version": 1
+      },
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3209/microsofttranslator/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsofttranslator",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_microsofttranslator/connections/85dddd7538ba420caea868ccc5bc757d",
+      "xrmConnectionReferenceLogicalName": "pizzahut_sharedmicrosofttranslator_6f8b8"
+    },
+    "datasets": {},
+    "dataSources": [
+      "MicrosoftTranslator"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "cc5c35d2-5715-4761-a294-73d1c1d644f7"
   },
   "cefcb5e6-5433-4f56-a34c-463681fa3cfe": {
     "connectionRef": {
@@ -262,5 +287,38 @@
     "dependencies": {},
     "dependents": [],
     "id": "d2b82b98-bcad-4ac2-8c2f-147a4944b9ac"
+  },
+  "d4b4af7a-8fc8-43f3-8a4e-cb829a0b40b6": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "a6c4e033-5ebb-ee11-9078-6045bd5883aa"
+        },
+        "workflowName": {
+          "value": "8c96c01a-4f58-d94f-06be-52b60fb8d347"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "a6c4e033-5ebb-ee11-9078-6045bd5883aa"
+        },
+        "workflowName": {
+          "value": "8c96c01a-4f58-d94f-06be-52b60fb8d347"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ResponeRequestPowerApp"
+    ],
+    "dependencies": {
+      "shared_office365users": "42a845f1-731d-4e22-9fa2-06fb9d7e9a5d",
+      "shared_sharepointonline": "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4"
+    },
+    "dependents": [],
+    "id": "d4b4af7a-8fc8-43f3-8a4e-cb829a0b40b6"
   }
 }

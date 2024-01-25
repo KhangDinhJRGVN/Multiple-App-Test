@@ -19,14 +19,14 @@ App As appinfo:
             },
             {
                 ID: 3,
-                Name: "Function 3",
-                Icon: Icon.Trash,
+                Name: "Api test",
+                Icon: Icon.Airplane,
                 Active: true
             },
             {
                 ID: 4,
-                Name: "Function 4",
-                Icon: Icon.Edit,
+                Name: "Response Data",
+                Icon: Icon.Redo,
                 Active: true
             },
             {

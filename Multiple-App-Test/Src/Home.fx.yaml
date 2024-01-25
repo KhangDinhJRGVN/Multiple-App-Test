@@ -34,6 +34,15 @@ Home As screen:
                     Navigate(
                         NewTicket,
                         ScreenTransition.Fade
+                    ),
+                    "Api test",
+                    Navigate(
+                        ApiTest,
+                        ScreenTransition.Fade
+                    ),
+                    "Response Data",Navigate(
+                        ResponseData,
+                        ScreenTransition.Fade
                     )
                 )
             PaddingBottom: =0
