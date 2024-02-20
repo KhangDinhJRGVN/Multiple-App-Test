@@ -212,7 +212,7 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_microsofttranslator",
         "appVer": "3.24021.12",
-        "modifiedOn": "2024-02-19 10:30:15",
+        "modifiedOn": "2024-02-20 02:10:09",
         "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
