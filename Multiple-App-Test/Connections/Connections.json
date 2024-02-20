@@ -211,9 +211,9 @@
       "displayName": "Microsoft Translator",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_microsofttranslator",
-        "appVer": "3.24013.17",
-        "modifiedOn": "2024-01-25 11:06:30",
-        "policy": "{\"type\":\"action\",\"dataSources\":{\"actions\":[\"translate\"]}}",
+        "appVer": "3.24021.12",
+        "modifiedOn": "2024-02-20 02:10:09",
+        "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3209/microsofttranslator/icon.png",
@@ -294,6 +294,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "42a845f1-731d-4e22-9fa2-06fb9d7e9a5d": {
+          "value": "shared_office365users"
+        },
+        "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4": {
+          "value": "shared_sharepointonline"
+        },
         "workflowEntityId": {
           "value": "a6c4e033-5ebb-ee11-9078-6045bd5883aa"
         },
@@ -302,6 +308,12 @@
         }
       },
       "parameterHintsV2": {
+        "shared_office365users": {
+          "value": "42a845f1-731d-4e22-9fa2-06fb9d7e9a5d"
+        },
+        "shared_sharepointonline": {
+          "value": "b4ec6251-2df6-42d3-9ca1-6fd1b0f218c4"
+        },
         "workflowEntityId": {
           "value": "a6c4e033-5ebb-ee11-9078-6045bd5883aa"
         },
