@@ -104,7 +104,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/20/2024 02:12:52",
+  "HeaderLastSavedDateTimeUTC": "02/20/2024 02:19:05",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1e73d99e-6050-4692-af07-03b7fd28455c": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/45b6d183022e45ba8534cc83b23aaf3a\"",
@@ -124,7 +124,7 @@
     "LogoPizzahut": "cffe0e06-6212-47d1-a238-0f1b22c93b4e.png"
   },
   "LocalResourceRootPaths": {
-    "LogoPizzahut": "https://docserverpwaprodseas.blob.core.windows.net/6364b786-8ba9-4688-b0ad-cbaf47259868-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-20T02%3A10%3A04Z&ske=2024-02-21T02%3A25%3A04Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-21T02%3A25%3A04Z&sr=b&sp=r&sig=sCQg1d8YvRs9ab%2BIX8U6LCPnwEV0wl6uFSIb8X%2BfgwQ%3D"
+    "LogoPizzahut": "https://docserverpwaprodseas.blob.core.windows.net/4f9fdf09-0ae5-48d7-895c-b55fea8c62f6-1/resource/Assets0Images0cffe0e06-6212-47d1-a238-0f1b22c93b4e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-20T02%3A18%3A41Z&ske=2024-02-21T02%3A33%3A41Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-21T02%3A33%3A41Z&sr=b&sp=r&sig=j5q0CxH9tb9bVHlLFb0%2Fzv1acaNuX7JlTgUGeG3XD4s%3D"
   },
   "OldLogoFileName": "xazpbfsq.jpg",
   "OrderComponentMetadata": {},
@@ -376,7 +376,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.6321752,
+    "AnalysisLoadTime": 0.6308613,
     "ControlCount": {
       "attachments": 1,
       "button": 7,
@@ -393,7 +393,7 @@
       "text": 6,
       "typedDataCard": 6
     },
-    "DeserializationLoadTime": 1.8417872
+    "DeserializationLoadTime": 1.8898299
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
